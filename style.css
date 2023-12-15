@@ -95,3 +95,87 @@ body {
 	box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
 	margin-bottom: 16px;
 }
+
+.features .form-control,
+.features input {
+	border-radius: 0;
+}
+.features .btn {
+    background-color: #589b37;
+    border: 1px solid #589b37;
+    color: #fff;
+    margin-top: 20px;
+}
+.features .btn:hover {
+    background-color: #333;
+    border: 1px solid #333;
+}
+.form-group {
+    margin-bottom: 5px;;
+}
+
+.background {
+	background: #dedec8;
+	padding: 4em 0;
+}
+.team {
+	color: #5e5e55;
+	padding: 0 180px;
+}
+.team .card-columns {
+	-webkit-column-count: 4;
+	-moz-column-count: 4;
+	column-count: 4;
+}
+.team .card {
+	background:none;
+	border: none;
+}
+.team .card-title {
+	font-size: 1.3rem;
+	margin-bottom: 0;
+	text-transform: uppercase;
+}
+
+.page-footer
+    {
+        background-color: #222;
+        color: #ccc;
+        padding: 60px 0 30px;
+
+    }
+
+.footer-copyright
+    {
+        color: #666;
+        padding: 40px 0;
+    }
+
+@media (max-width: 991.98px)
+    {
+        .team{
+            padding: 0 15px;
+        }
+    }
+@media (max-width: 575.98px){
+    .description{
+        left: 0;
+        padding: 0 15px;
+        position: absolute;
+        top: 10px;
+        transform: none;
+        text-align: center;
+    }
+    .description h1{
+        font-size: 2em;
+    }
+    .description p{
+        font-size: 1.2em;
+    }
+    .features{
+        margin: 0;
+    }
+    .team .card{
+        width: 100%;
+    }
+}
