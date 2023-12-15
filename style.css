@@ -1,27 +1,15 @@
+html, body {
+    height: 100%;
+    margin: 0;
+  }
 
-html, body
-    {
-        height: 100%;
-        margin: 0;       
-    }
-
-.header
-    {
-        background-image: url('images/header-background.jpg');
-        background-size: cover;
-        background-position: center;
-        position: relative;
-        height: 100%;
-    
-    }
-
-
+  
 body {
     padding: 0;
     margin: 0;
     background: #f2f6e9;
-    
 }
+
 .navbar {
     background:#6ab446;
 }
@@ -38,6 +26,14 @@ body {
 }
 .navbar-collapse {
     justify-content: flex-end;
+}
+
+.header {
+    background-image: url('images/header-background.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    height: 100%;
 }
 
 .overlay {
@@ -64,7 +60,6 @@ body {
 	font-size: 1.3rem;
 	line-height: 1.5;
 }
-
 .description button {
     border:1px solid #6ab446;
     background:#6ab446;
@@ -76,6 +71,9 @@ body {
     background:#fff;
     color:#000;
 }
+
+
+/*  featured section  */
 
 .features {
 	margin: 4em auto;
@@ -110,9 +108,12 @@ body {
     background-color: #333;
     border: 1px solid #333;
 }
+
 .form-group {
     margin-bottom: 5px;;
 }
+
+/*  team section  */
 
 .background {
 	background: #dedec8;
@@ -137,51 +138,158 @@ body {
 	text-transform: uppercase;
 }
 
-.page-footer
-    {
-        background-color: #222;
-        color: #ccc;
-        padding: 60px 0 30px;
 
-    }
+a.team-portfolio-link {
+    text-decoration: none;
+    color: inherit;
+}
+/*  footer  */
 
-.footer-copyright
-    {
-        color: #666;
-        padding: 40px 0;
-    }
 
-@media (max-width: 991.98px)
-    {
-        .team{
-            padding: 0 15px;
-        }
-    }
-@media (max-width: 575.98px){
-    .description{
-        left: 0;
-        padding: 0 15px;
-        position: absolute;
-        top: 10px;
-        transform: none;
-        text-align: center;
-    }
-    .description h1{
-        font-size: 2em;
-    }
-    .description p{
-        font-size: 1.2em;
-    }
-    .features{
-        margin: 0;
-    }
-    .team .card{
-        width: 100%;
-    }
+.page-footer {
+    background-color: #222;
+    color: #ccc;
+    padding: 60px 0 30px;
+}
+.footer-copyright {
+    color: #666;
+    padding: 40px 0;
+}
+
+/* info section */
+
+.info {
+	color: #5e5e55;
+	padding: 0 180px;
+}
+.info .card-columns {
+	-webkit-column-count: 4;
+	-moz-column-count: 4;
+	column-count: 4;
+}
+.info .card {
+	background:none;
+	border: none;
+}
+.info .card-title {
+	font-size: 1.3rem;
+	margin-bottom: 0;
+	text-transform: uppercase;
+}
+
+
+/*  about queries  */
+
+
+.about{
+    max-width: 840px;
+    margin: 0 auto;
+}
+.i-am, .i-like {
+    text-align: center;
+    text-decoration: none
+  }
+  .about-list {
+    list-style: none;
+    padding: 0;
+  }
+
+
+/*  projects setting  */
+
+.projects {
+	color: #5e5e55;
+	padding: 0 180px;
+}
+.projects .card-columns {
+	-webkit-column-count: 4;
+	-moz-column-count: 4;
+	column-count: 4;
+}
+.projects .card {
+	background:none;
+	border: none;
+}
+.projects .card-title {
+	font-size: 1.3rem;
+	margin-bottom: 0;
+	text-transform: uppercase;
+}
+
+
+  .projects-heading {
+	text-align: center;	
+}
+
+
+.project-wrapper {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+}
+
+.project-image {
+	border-radius: 5px;
+	box-shadow: 0 4px 6px 0 rgba(34, 60, 80, .16);
+	transition: all ease-in-out .2s;
+}
+
+.project-wrapper:hover {
+	filter: brightness(.75);
+	box-shadow: 0 16px 20px 0 rgba(34, 60, 80, .16);
 }
 
 
 
+.project-wrapper:hover  .card-title {
+	visibility: visible;
+}
+
+.project-wrapper  .card-title {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: white;
+	visibility: hidden;
+	z-index: 2;
+	transition: all ease-in-out .2s;
+}
+
+/*  media queries  */
 
 
+@media (max-width: 991.98px) {
 
+	.team {
+		padding: 0 15px;
+	}
+	
+}
+@media (max-width: 575.98px) {
+    .description {
+        left: 0;
+        padding: 0 15px;
+        position: absolute;
+        top: 10%;
+        transform: none;
+        text-align: center;
+    }
+ 
+    .description h1 {
+        font-size: 2em;
+    }
+ 
+    .description p {
+        font-size: 1.2rem;
+    }
+ 
+    .features {
+        margin: 0;
+    }
+    .team {
+		max-width: 60%;
+	}
+}
